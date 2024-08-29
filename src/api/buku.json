@@ -1,0 +1,37 @@
+[
+    {
+        "BukuID": 1,
+        "Judul": "Buku A",
+        "Penulis": "Penulis A",
+        "Penerbit": "Penerbit A",
+        "TahunTerbit": 2020
+    },
+    {
+        "BukuID": 2,
+        "Judul": "Buku B",
+        "Penulis": "Penulis B",
+        "Penerbit": "Penerbit B",
+        "TahunTerbit": 2020
+    },
+    {
+        "BukuID": 3,
+        "Judul": "Buku C",
+        "Penulis": "Penulis C",
+        "Penerbit": "Penerbit C",
+        "TahunTerbit": 2020
+    },
+    {
+        "BukuID": 4,
+        "Judul": "Buku D",
+        "Penulis": "Penulis D",
+        "Penerbit": "Penerbit D",
+        "TahunTerbit": 2020
+    },
+    {
+        "BukuID": 5,
+        "Judul": "Buku E",
+        "Penulis": "Penulis E",
+        "Penerbit": "Penerbit E",
+        "TahunTerbit": 2020
+    }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Dashboard",
+    "path": "/"
+  },
+  {
+    "id": 2,
+    "title": "Peminjaman",
+    "path": "/peminjaman"
+  },
+  {
+    "id": 3,
+    "title": "Pengembalian",
+    "path": "/pengembalian"
+  },
+  {
+    "id": 4,
+    "title": "Pendataan",
+    "path": "/pendataan"
+  },
+  {
+    "id": 5,
+    "title": "Laporan",
+    "path": "/laporan"
+  },
+  {
+    "id": 6,
+    "title": "About",
+    "path": "/about"
+  }
+]

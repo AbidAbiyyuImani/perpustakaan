@@ -1,0 +1,121 @@
+---
+import Navbar from "../components/Navbar.astro"
+import Menu from "../api/menu.json"
+const {title} = Astro.props
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | Digital Library</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navigation -->
+         <Navbar />
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <div class="sidebar">
+                <a href="/" class="brand-link">
+                    <img src="dist/img/avatar5.png" alt="Abid Abiyyu Imani" class="brand-image img-circle elevation-3" style="opacity: .8">
+                    <span class="brand-text font-weight-light">Abid Abiyyu Imani</span>
+                </a>
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        {Menu.map((i) => 
+                            <li class="nav-item">
+                                <a href={i.path} class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>{i.title}</p>
+                                </a>
+                            </li>
+                        )}
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- content wrapper -->
+        <div class="content-wrapper">
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">{title}</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item">Home</li>
+                                <li class="breadcrumb-item active">{title}</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="container-fluid">
+                <div class="row">
+                    <slot/>
+                </div>
+            </section>
+        </div>
+
+        <!-- footer -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; <a href="/">Perpustakaan Digital SMKN 1 Kertajati</a></strong>
+        </footer>
+    </div>
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js" async></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js" async></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script async>
+    $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js" async></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js" async></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js" async></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js" async></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js" async></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js" async></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js" async></script>
+    <script src="plugins/daterangepicker/daterangepicker.js" async></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js" async></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js" async></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js" async></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js" async></script>
+</body>
+</html>
