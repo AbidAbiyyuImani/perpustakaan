@@ -1,6 +1,35 @@
 ---
+import { getCollection } from 'astro:content'
 import Layout from '../layouts/default.astro'
+import BukuAll from '../api/kategoribuku_relasi.json'
+const dataCol = await getCollection("buku")
 const title = "Dashboard"
 ---
 <Layout title={title}>
+        {dataCol.map((i)=>
+            <div class="col-md-4">
+                <a href="/">
+                    <div class="info-box mb-3 bg-warning">
+                        <span class="info-box-icon"><i class="fas fa-book"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">{i.data.Judul} | {i.data.Penulis} | {i.data.Penerbit}</span>
+                            <span class="info-box-number">{i.data.TahunTerbit} | {i.data.NamaKategori}</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        )}
+        <!-- {BukuAll.map((i)=>
+            <div class="col-md-4">
+                <a href="/">
+                    <div class="info-box mb-3 bg-warning">
+                        <span class="info-box-icon"><i class="fas fa-book"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">{i.Judul} | {i.Penulis} | {i.Penerbit}</span>
+                            <span class="info-box-number">{i.TahunTerbit} | {i.NamaKategori}</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        )} -->
 </Layout>

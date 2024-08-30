@@ -9,6 +9,7 @@ const {title} = Astro.props
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} | Digital Library</title>
+    <link rel="icon" type="image/svg+xml" href="/dist/img/book.png" />
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -38,14 +39,14 @@ const {title} = Astro.props
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="/" class="brand-link">
+                <img src="dist/img/avatar5.png" alt="Abid Abiyyu Imani" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Abid Abiyyu Imani</span>
+            </a>
             <div class="sidebar">
-                <a href="/" class="brand-link">
-                    <img src="dist/img/avatar5.png" alt="Abid Abiyyu Imani" class="brand-image img-circle elevation-3" style="opacity: .8">
-                    <span class="brand-text font-weight-light">Abid Abiyyu Imani</span>
-                </a>
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        {Menu.map((i) => 
+                        {Menu.map((i) =>
                             <li class="nav-item">
                                 <a href={i.path} class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>

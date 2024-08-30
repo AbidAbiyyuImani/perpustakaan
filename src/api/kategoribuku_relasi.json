@@ -1,37 +1,42 @@
 [
     {
-        "BukuId": 1,
+        "BukuID": 1,
         "Judul": "Buku A",
         "Penulis": "Penulis A",
         "Penerbit": "Penerbit A",
-        "TahunTerbit": 2020
+        "TahunTerbit": 2021,
+        "NamaKategori": "Kategori A"
     },
     {
-        "BukuId": 2,
+        "BukuID": 2,
         "Judul": "Buku B",
         "Penulis": "Penulis B",
         "Penerbit": "Penerbit B",
-        "TahunTerbit": 2020
+        "TahunTerbit": 2022,
+        "NamaKategori": "Kategori B"
     },
     {
-        "BukuId": 3,
+        "BukuID": 3,
         "Judul": "Buku C",
         "Penulis": "Penulis C",
         "Penerbit": "Penerbit C",
-        "TahunTerbit": 2020
+        "TahunTerbit": 2023,
+        "NamaKategori": "Kategori C"
     },
     {
-        "BukuId": 4,
+        "BukuID": 4,
         "Judul": "Buku D",
         "Penulis": "Penulis D",
         "Penerbit": "Penerbit D",
-        "TahunTerbit": 2020
+        "TahunTerbit": 2024,
+        "NamaKategori": "Kategori D"
     },
     {
-        "BukuId": 5,
+        "BukuID": 5,
         "Judul": "Buku E",
         "Penulis": "Penulis E",
         "Penerbit": "Penerbit E",
-        "TahunTerbit": 2020
+        "TahunTerbit": 2025,
+        "NamaKategori": "Kategori E"
     }
 ]

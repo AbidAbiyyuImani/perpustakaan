@@ -1,0 +1,22 @@
+[
+    {
+        "KategoriID": 1,
+        "NamaKategori": "Kategori A"
+    },
+    {
+        "KategoriID": 2,
+        "NamaKategori": "Kategori B"
+    },
+    {
+        "KategoriID": 3,
+        "NamaKategori": "Kategori C"
+    },
+    {
+        "KategoriID": 4,
+        "NamaKategori": "Kategori D"
+    },
+    {
+        "KategoriID": 5,
+        "NamaKategori": "Kategori E"
+    }
+]
