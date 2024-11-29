@@ -1,0 +1,20 @@
+APLIKASI SISTEM INFORMASI PERPUSTAKAAN
+
+KELOMPOK TERAKHIR
+1. ABID ABIYYU IMANI
+2. ERWIN NURJAYA
+3. MUHAMAD BALQI AGUSTIAN
+
+INFORMASI LOGIN
+1.
+role  : admin
+USN   : abid
+PASS  : 123
+2.
+role  : petugas
+USN   : balqi
+PASS  : 123
+3.
+role  : peminjam
+USN   : erwin
+PASS  : 123
